@@ -1,0 +1,52 @@
+<div class="card-detail">
+  <div class="card-pokemon-info">
+    <section class="card-pokemon">
+      <img src="{{ sprites.other.dream_world.front_default }}" />
+    </section>
+    <section class="separator"></section>
+    <section class="card-info">
+      <div class="control-info">
+        <label>Name</label>
+        <span class="name">{{ name }}</span>
+      </div>
+      <div class="control-info">
+        <label>Height</label>
+        <span>{{ NumberConvert(weight) / 10  }} m</span>
+      </div>
+      <div class="control-info">
+        <label>Weight</label>
+        <span>{{ NumberConvert(weight) / 10 }} kg</span>
+      </div>
+      <div class="control-info">
+        <label>Order</label>
+        <span>#{{ order }}</span>
+      </div>
+    </section>
+  </div>
+  <div class="card-combat">
+    <div class="item-stat" *ngFor="let stat of stats">
+      <label for="">{{ stat.stat.name }} | {{ ((NumberConvert(stat.base_stat) / 255) * 100).toFixed(2) }}%</label>
+      <mat-progress-bar mode="determinate" value="{{((NumberConvert(stat.base_stat) / 255) * 100)}}"></mat-progress-bar>
+    </div>
+    <!-- <div class="item-stat">
+      <label for="">Attack 45%</label>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+    <div class="item-stat">
+      <label for="">Defense 45%</label>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+    <div class="item-stat">
+      <label for="">Special Attack 45%</label>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+    <div class="item-stat">
+      <label for="">Special Defense 45%</label>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+    <div class="item-stat">
+      <label for="">Speed 45%</label>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div> -->
+  </div>
+</div>

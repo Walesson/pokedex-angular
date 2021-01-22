@@ -1,0 +1,28 @@
+<div class="pagination">
+  <app-pagination
+    previus="{{previus}}"
+    next="{{next}}"
+    (nextEvent)="nextPage()"
+    (previusEvent)="previusPage()"
+    total="{{total}}"></app-pagination>
+</div>
+
+<div class="container">
+  <mat-spinner *ngIf="pokemons.length <= 0"></mat-spinner>
+  <app-pokemon-card *ngFor="let pokemon of pokemons"
+    name="{{pokemon.name}}"
+    [types]="pokemon.types"
+    order="{{pokemon.order}}"
+    image="{{pokemon.sprites.other.dream_world.front_default}}"
+    (click)="selectPokemon(pokemon)"
+  ></app-pokemon-card>
+</div>
+
+<div class="pagination">
+  <app-pagination
+    previus="{{previus}}"
+    next="{{next}}"
+    (nextEvent)="nextPage()"
+    (previusEvent)="previusPage()"
+    total="{{total}}"></app-pagination>
+</div>

@@ -1,0 +1,43 @@
+@import '../../../resources/colors.scss';
+
+
+.content {
+  display: flex;
+  flex:1 ;
+  text-align: right;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 7px 17px;
+  border-radius: 5px;
+  background-color: $primary;
+  cursor: pointer;
+}
+
+.icons[disabled-action="true"] {
+  background-color: #222;
+  cursor: not-allowed;
+}
+
+.total {
+  font-size: 25px;
+}
+
+mat-icon {
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .total {
+    font-size: 20px;
+    padding: 5px 8px;
+  }
+}

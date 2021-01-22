@@ -1,0 +1,9 @@
+<div class="content">
+  <span class="previus icons" [attr.disabled-action]="previus.length <= 0" title="Anterior" (click)="previusAction()">
+    <mat-icon aria-hidden="false" aria-label="previus icon">keyboard_arrow_left</mat-icon>
+  </span>
+  <span class="next icons" [attr.disabled-action]="next.length <= 0" title="Próximo" (click)="nextAction()">
+    <mat-icon aria-hidden="false" aria-label="next icon">keyboard_arrow_right</mat-icon>
+  </span>
+  <span class="total icons">TOTAL {{ total }}</span>
+</div>

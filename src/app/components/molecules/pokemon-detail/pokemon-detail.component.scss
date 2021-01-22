@@ -1,0 +1,70 @@
+@import '../../../resources/colors.scss';
+
+.card-detail {
+  background-color: $mainDark;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.card-pokemon-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $mainDark;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.separator {
+  width: 2px;
+  height: 200px;
+  background-color: $dark;
+  margin: 0 45px;
+}
+
+.card-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 250px;
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+.card-combat {
+  background-color: $bgColor;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.item-stat {
+  margin: 25px auto;
+}
+
+.item-stat label {
+  display: inline-block;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+
+.control-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+
+.control-info label {
+  color: $primary;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.control-info span {
+  font-size: 2em;
+}

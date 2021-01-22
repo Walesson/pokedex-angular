@@ -1,0 +1,44 @@
+$bgColor: #252525;
+$mainDark: #111;
+$primary: #9766d5;
+$secondary: #5ecc52;
+
+// Colors types
+$bug: #439950;
+$dark: #595978;
+$dragon: #62cad9;
+$electric: #f8f272;
+$fairy: #eb4d68;
+$fighting: #ef6239;
+$fire: #f24c59;
+$flying: #94b2c7;
+$ghost: #906791;
+$grass: #5ecc52;
+$ground: #6e491f;
+$ice: #d8f0fa;
+$normal: #ca98a6;
+$poison: #9766d5;
+$psychic: #f15792;
+$rock: #8b3e22;
+$steel: #4fbe94;
+$water: #85a8fb;
+
+$colors: (
+  'bug': $bug,
+  'dark': $dark,
+  'dragon': $dragon,
+  'electric': $electric,
+  'fairy': $fairy,
+  'fighting': $fighting,
+  'fire': $fire,
+  'flying': $flying,
+  'ghost': $ghost,
+  'grass': $grass,
+  'ground': $ground,
+  'ice': $ice,
+  'normal': $normal,
+  'poison': $poison,
+  'psychic': $psychic,
+  'rock': $rock,
+  'steel': $steel,
+  'water': $water);

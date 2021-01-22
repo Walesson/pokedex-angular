@@ -1,0 +1,16 @@
+<div class="content" role="main">
+  <mat-card class="card" >
+    <mat-card-header class="card-image">
+      <img src="{{ image }}" />
+    </mat-card-header>
+    <mat-card-content>
+      <mat-card-title class="title-card">{{name}}</mat-card-title>
+      <mat-card-title>#{{order}}</mat-card-title>
+      <section class="card-types">
+        <mat-card-subtitle *ngFor="let type of types">
+          <span [attr.type-pokemon]="type.type.name">{{ type.type.name }}</span>
+        </mat-card-subtitle>
+      </section>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,25 @@
+@import '../../resources/colors.scss';
+
+body {
+  background-color: $bgColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1790px;
+  margin: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.pagination {
+  display: flex;
+  flex :1;
+  flex-direction: row;
+  max-width: 1790px;
+  justify-content: flex-end;
+  padding: 15px;
+}
