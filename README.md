@@ -1,5 +1,7 @@
 # Pokedex
 
+<img  style="display: block;width: 450px;margin:15px auto;margin-bottom: 20px;border-top: 1px solid #333;" src="https://raw.githubusercontent.com/Walesson/pokedex-angular/master/src/assets/images/pokedex-run.png" />
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
 ## How to Install
@@ -17,6 +19,10 @@ $ npm install
 ```
 
 Run `ng serve -c` for running application
+
+```
+$ ng s -c
+```
 
 ## Development server
 
